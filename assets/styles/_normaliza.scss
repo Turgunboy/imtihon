@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  list-style: none;
+}
+body {
+  background-color: rgb(33, 37, 41);
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color: #fff;
+  font-family: "Montserrat";
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #222;
+  border: 1px solid #fff;
+}
+.cub {
+  width: 5px;
+  height: 5px;
+  background-color: lawngreen;
+}

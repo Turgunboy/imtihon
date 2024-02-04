@@ -1,0 +1,226 @@
+.about {
+  &__top {
+    display: flex;
+    &_content {
+      flex: 0.5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 30px;
+    }
+  }
+  &__bottom {
+    display: flex;
+  }
+  &__content {
+    flex: 0.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 30px;
+    h1 {
+      font-weight: 700;
+      font-size: 24px;
+      color: #fff;
+    }
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      margin: 25px 0;
+      color: #fff;
+      width: 500px;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgb(4, 255, 20);
+    }
+  }
+  &__img {
+    flex: 0.62;
+    width: 100%;
+    height: 500px;
+  }
+}
+
+.testimonials {
+  padding: 120px 0;
+  width: 100%;
+  background-color: rgb(39, 43, 48);
+  &__cards {
+    @include dFlex;
+    flex-wrap: wrap;
+    gap: 30px;
+    &_card {
+      width: 400px;
+      height: 550px;
+      padding: 30px;
+      background-color: rgb(33, 37, 41);
+      color: #fff;
+      h3 {
+        font-size: 24px;
+        font-weight: 700;
+      }
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        padding: 20px 0;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.mission {
+  background-image: url("../images/mission.png");
+  padding: 120px 0;
+  height: 400px;
+  color: #fff;
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  p {
+    width: 516px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0;
+  }
+  a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+.chooses {
+  background: rgb(33, 37, 41);
+  padding: 110px 0;
+  .row {
+    @include dFlex(space-around);
+    flex-wrap: wrap;
+
+    .chooses_box {
+      h1 {
+        font-size: 36px;
+        color: rgb(243, 243, 243);
+        font-weight: 700;
+      }
+      h3 {
+        font-size: 24px;
+        font-weight: 500;
+        color: rgb(243, 243, 243);
+        padding: 20px 0;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #fff;
+        margin: 10px 0;
+        font-size: 16px;
+        font-weight: 600;
+        &:hover {
+          color: purple;
+        }
+      }
+    }
+  }
+}
+.driveing {
+  background: rgb(33, 37, 41);
+  margin-top: 0px;
+  .row {
+    @include dFlex;
+    position: relative;
+  }
+  &__left {
+    flex: 0.4;
+    color: #fff;
+    height: 450px;
+    background-color: rgb(82, 31, 132);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    p {
+      margin: 6px 0;
+      font-size: 18px;
+      color: rgb(164, 102, 225);
+    }
+    button {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  }
+
+  &__right {
+    flex: 0.6;
+  }
+  .vector {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+.partners {
+  //   height: 231px;
+  background: rgb(33, 37, 41);
+  padding: 100px 0;
+  h2 {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+  }
+  &__barnds {
+    @include dFlex;
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
+}
+.contact {
+  background: rgb(33, 37, 41);
+  padding: 100px 0;
+  .row {
+    @include dFlex(space-between, start);
+    flex-wrap: wrap;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    h2 {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    h3 {
+      color: rgb(175, 175, 175);
+      font-size: 18px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+    }
+    .adress {
+      width: 300px;
+    }
+  }
+  &__local {
+    @include dFlex;
+    margin-top: 1rem;
+    gap: 10px;
+  }
+}

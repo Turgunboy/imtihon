@@ -1,0 +1,11 @@
+footer {
+  background-color: rgb(39, 43, 48);
+  padding: 40px 0;
+  .row {
+    @include dFlex;
+    .footer__left {
+      @include dFlex;
+      gap: 30px;
+    }
+  }
+}
