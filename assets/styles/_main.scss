@@ -1,26 +1,18 @@
 .about {
   &__top {
     display: flex;
-    &_content {
-      flex: 0.5;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-left: 30px;
-    }
   }
   &__bottom {
     display: flex;
   }
   &__content {
-    flex: 0.6;
+    flex: 0.5;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // padding: 0 20px;
 
-    margin-left: 30px;
     h1 {
       font-weight: 700;
       font-size: 24px;
@@ -41,9 +33,12 @@
     }
   }
   &__img {
-    flex: 0.62;
+    flex: 0.8;
     width: 100%;
     height: 500px;
+  }
+  &__img.respons__1 {
+    display: none;
   }
 }
 
@@ -54,10 +49,10 @@
   &__cards {
     @include dFlex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     &_card {
       width: 400px;
-      height: 550px;
+    //   height: 500px;
       padding: 30px;
       background-color: rgb(33, 37, 41);
       color: #fff;
@@ -78,8 +73,10 @@
 }
 .mission {
   background-image: url("../images/mission.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 120px 0;
-  height: 400px;
+  height: auto;
   color: #fff;
   h2 {
     font-size: 36px;
@@ -104,7 +101,13 @@
     @include dFlex(space-around);
     flex-wrap: wrap;
 
-    .chooses_box {
+    .chooses_boxes {
+      flex: 0.7;
+      @include dFlex;
+      gap: 30px;
+    }
+    .chooses_box,
+    .chooses_head {
       h1 {
         font-size: 36px;
         color: rgb(243, 243, 243);
@@ -165,6 +168,7 @@
 
   &__right {
     flex: 0.6;
+    width: 100%;
   }
   .vector {
     position: absolute;
@@ -173,7 +177,6 @@
   }
 }
 .partners {
-  //   height: 231px;
   background: rgb(33, 37, 41);
   padding: 100px 0;
   h2 {
@@ -185,6 +188,9 @@
     @include dFlex;
     padding: 20px 0;
     flex-wrap: wrap;
+    img {
+      width: 200px;
+    }
   }
 }
 .contact {
@@ -192,12 +198,19 @@
   padding: 100px 0;
   .row {
     @include dFlex(space-between, start);
-    flex-wrap: wrap;
   }
-  &__box {
+  &__boxes {
+    flex: 0.9;
+    @include dFlex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__box,
+  &__head {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    // width: 200px;
     h2 {
       font-size: 24px;
       color: #fff;

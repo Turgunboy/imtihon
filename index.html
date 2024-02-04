@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -60,7 +64,10 @@
               <a href="#"> Contacts </a>
             </li>
           </ul>
-          <button>Request a quote</button>
+          <button class="nav__bar">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <button class="header__btn">Request a quote</button>
         </div>
       </div>
       <div class="hero">
@@ -81,22 +88,27 @@
             <div class="hero__bottom">
               <h2>Our fun facts</h2>
               <div class="hero__bottom_boxes">
-                <div class="hero__bottom_boxes_result">
-                  <h3>49 073 777 +</h3>
-                  <p>Miles per year</p>
-                </div>
-                <div class="hero__bottom_boxes_result">
-                  <h3>20 000 +</h3>
-                  <p>Delivered loads per year</p>
-                </div>
-                <div class="hero__bottom_boxes_result">
-                  <h3>200 +</h3>
-                  <p>Happy Customers</p>
-                </div>
-                <div class="hero__bottom_boxes_result">
-                  <h3>100 +</h3>
-                  <p>Employees</p>
-                </div>
+                <span>
+                  <div class="hero__bottom_boxes_result">
+                    <h3>49 073 777 +</h3>
+                    <p>Miles per year</p>
+                  </div>
+                  <div class="hero__bottom_boxes_result">
+                    <h3>20 000 +</h3>
+                    <p>Delivered loads per year</p>
+                  </div>
+                </span>
+
+                <span
+                  ><div class="hero__bottom_boxes_result">
+                    <h3>200 +</h3>
+                    <p>Happy Customers</p>
+                  </div>
+                  <div class="hero__bottom_boxes_result">
+                    <h3>100 +</h3>
+                    <p>Employees</p>
+                  </div>
+                </span>
               </div>
               <div class="years">
                 <img src="./assets/images/years.png" alt="years-result" />
@@ -109,6 +121,11 @@
     <main>
       <section class="about">
         <div class="about__top">
+          <img
+            src="./assets/images/Rectangle 123.png"
+            class="about__img respons__1"
+            alt="about"
+          />
           <div class="about__content">
             <div>
               <h1>About us</h1>
@@ -139,7 +156,7 @@
         <div class="about__bottom">
           <img
             src="./assets/images/Rectangle 123 (1).png"
-            class="about__img"
+            class="about__img respons__2"
             alt="about"
           />
           <div class="about__content">
@@ -150,9 +167,12 @@
                 successfully operates the nation’s ethical dry van trucking and
                 shipping truckload fleet by incorporating the strongest core
                 values with the most comprehensive terminal network in the
-                industry. Our dry van trucking travels more than 1562 miles
-                every day. Our commitment to safety, service, and damage-free
-                delivery is paramount within our walls and on the road…
+                industry.
+                <br />
+                <br />
+                Our dry van trucking travels more than 1562 miles every day. Our
+                commitment to safety, service, and damage-free delivery is
+                paramount within our walls and on the road…
               </p>
               <a href="#"
                 >Read more
@@ -214,63 +234,65 @@
       <section class="chooses">
         <div class="container">
           <div class="row">
-            <div class="chooses_box">
+            <div class="chooses_head">
               <h1>Why chooses us</h1>
               <h3>Trucking Times INC VALUES</h3>
             </div>
-            <div class="chooses_box">
-              <a href="#"
-                ><div class="cub"></div>
-                Winning Attituade</a
-              >
-              <a href="#"
-                ><div class="cub"></div>
-                Communication</a
-              >
-              <a href="#"
-                ><div class="cub"></div>
-                Development</a
-              >
-              <a href="#"
-                ><div class="cub"></div>
-                Teamwork</a
-              >
-            </div>
-            <div class="chooses_box">
-              <a href="#"
-                ><div class="cub"></div>
-                Safety</a
-              >
-              <a href="#"
-                ><div class="cub"></div>
-                Ethics</a
-              >
-              <a href="#"
-                ><div class="cub"></div>
-                Respect</a
-              >
-              <a href="#"
-                ><div class="cub"></div>
-                Balance</a
-              >
-            </div>
-            <div class="chooses_box">
-              <a href="#"
-                ><div class="cub"></div>
-                Change</a
-              >
-              <a href="#"
-                ><div class="cub"></div>
-                Initiative</a
-              >
-              <a href="#"
-                ><div class="cub"></div>
-                Accountabilitya</a
-              >
-              <a href="#"
-                ><div class="cub"></div>
-                Charity</a
-              >
+            <div class="chooses_boxes">
+              <div class="chooses_box">
+                <a href="#"
+                  ><div class="cub"></div>
+                  Winning Attituade</a
+                >
+                <a href="#"
+                  ><div class="cub"></div>
+                  Communication</a
+                >
+                <a href="#"
+                  ><div class="cub"></div>
+                  Development</a
+                >
+                <a href="#"
+                  ><div class="cub"></div>
+                  Teamwork</a
+                >
+              </div>
+              <div class="chooses_box">
+                <a href="#"
+                  ><div class="cub"></div>
+                  Safety</a
+                >
+                <a href="#"
+                  ><div class="cub"></div>
+                  Ethics</a
+                >
+                <a href="#"
+                  ><div class="cub"></div>
+                  Respect</a
+                >
+                <a href="#"
+                  ><div class="cub"></div>
+                  Balance</a
+                >
+              </div>
+              <div class="chooses_box">
+                <a href="#"
+                  ><div class="cub"></div>
+                  Change</a
+                >
+                <a href="#"
+                  ><div class="cub"></div>
+                  Initiative</a
+                >
+                <a href="#"
+                  ><div class="cub"></div>
+                  Accountabilitya</a
+                >
+                <a href="#"
+                  ><div class="cub"></div>
+                  Charity</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -323,7 +345,7 @@
       <section class="contact">
         <div class="container">
           <div class="row">
-            <div class="contact__box">
+            <div class="contact__head">
               <h2>Contact us</h2>
               <div class="contact__local">
                 <a href="#"
@@ -352,26 +374,28 @@
                 </a>
               </div>
             </div>
-            <div class="contact__box">
-              <h3>Address</h3>
-              <p class="adress">
-                730 E Saint Charles Rd, Suite 102 Lombard IL 60148, USA
-              </p>
-            </div>
-            <div class="contact__box">
-              <h3>Email</h3>
-              <p>
-                dispatch@truckingtimes.pro <br />
-                careers@truckingtimes.pro
-              </p>
-            </div>
-            <div class="contact__box">
-              <h3>Phone</h3>
-              <p>+1 (217) 247 4748</p>
-            </div>
-            <div class="contact__box">
-              <h3>We work</h3>
-              <p>Daily 24/7</p>
+            <div class="contact__boxes">
+              <div class="contact__box">
+                <h3>Address</h3>
+                <p class="adress">
+                  730 E Saint Charles Rd, Suite 102 Lombard IL 60148, USA
+                </p>
+              </div>
+              <div class="contact__box">
+                <h3>Email</h3>
+                <p>
+                  dispatch@truckingtimes.pro <br />
+                  careers@truckingtimes.pro
+                </p>
+              </div>
+              <div class="contact__box">
+                <h3>Phone</h3>
+                <p>+1 (217) 247 4748</p>
+              </div>
+              <div class="contact__box">
+                <h3>We work</h3>
+                <p>Daily 24/7</p>
+              </div>
             </div>
           </div>
         </div>

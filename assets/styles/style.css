@@ -149,6 +149,10 @@ header .header__right button {
   background-color: rgb(106, 54, 156);
   cursor: pointer;
 }
+header .header__right .nav__bar {
+  background-color: transparent;
+  display: none;
+}
 header .hero {
   padding-top: 100px;
 }
@@ -195,6 +199,12 @@ header .hero__bottom_boxes {
   align-items: center;
   gap: 52px;
 }
+header .hero__bottom_boxes span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
 header .hero__bottom_boxes h3 {
   color: rgb(4, 255, 20);
   font-size: 24px;
@@ -208,24 +218,15 @@ header .hero__bottom_boxes p {
 .about__top {
   display: flex;
 }
-.about__top_content {
+.about__bottom {
+  display: flex;
+}
+.about__content {
   flex: 0.5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
-}
-.about__bottom {
-  display: flex;
-}
-.about__content {
-  flex: 0.6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 30px;
 }
 .about__content h1 {
   font-weight: 700;
@@ -246,9 +247,12 @@ header .hero__bottom_boxes p {
   color: rgb(4, 255, 20);
 }
 .about__img {
-  flex: 0.62;
+  flex: 0.8;
   width: 100%;
   height: 500px;
+}
+.about__img.respons__1 {
+  display: none;
 }
 
 .testimonials {
@@ -261,11 +265,10 @@ header .hero__bottom_boxes p {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
 }
 .testimonials__cards_card {
   width: 400px;
-  height: 550px;
   padding: 30px;
   background-color: rgb(33, 37, 41);
   color: #fff;
@@ -285,8 +288,10 @@ header .hero__bottom_boxes p {
 
 .mission {
   background-image: url("../images/mission.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 120px 0;
-  height: 400px;
+  height: auto;
   color: #fff;
 }
 .mission h2 {
@@ -315,18 +320,28 @@ header .hero__bottom_boxes p {
   align-items: center;
   flex-wrap: wrap;
 }
-.chooses .row .chooses_box h1 {
+.chooses .row .chooses_boxes {
+  flex: 0.7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.chooses .row .chooses_box h1,
+.chooses .row .chooses_head h1 {
   font-size: 36px;
   color: rgb(243, 243, 243);
   font-weight: 700;
 }
-.chooses .row .chooses_box h3 {
+.chooses .row .chooses_box h3,
+.chooses .row .chooses_head h3 {
   font-size: 24px;
   font-weight: 500;
   color: rgb(243, 243, 243);
   padding: 20px 0;
 }
-.chooses .row .chooses_box a {
+.chooses .row .chooses_box a,
+.chooses .row .chooses_head a {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -335,7 +350,8 @@ header .hero__bottom_boxes p {
   font-size: 16px;
   font-weight: 600;
 }
-.chooses .row .chooses_box a:hover {
+.chooses .row .chooses_box a:hover,
+.chooses .row .chooses_head a:hover {
   color: purple;
 }
 
@@ -375,6 +391,7 @@ header .hero__bottom_boxes p {
 }
 .driveing__right {
   flex: 0.6;
+  width: 100%;
 }
 .driveing .vector {
   position: absolute;
@@ -398,6 +415,9 @@ header .hero__bottom_boxes p {
   padding: 20px 0;
   flex-wrap: wrap;
 }
+.partners__barnds img {
+  width: 200px;
+}
 
 .contact {
   background: rgb(33, 37, 41);
@@ -407,29 +427,36 @@ header .hero__bottom_boxes p {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  flex-wrap: wrap;
 }
-.contact__box {
+.contact__boxes {
+  flex: 0.9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.contact__box, .contact__head {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.contact__box h2 {
+.contact__box h2, .contact__head h2 {
   font-size: 24px;
   color: #fff;
   font-weight: 700;
 }
-.contact__box h3 {
+.contact__box h3, .contact__head h3 {
   color: rgb(175, 175, 175);
   font-size: 18px;
   font-weight: 500;
 }
-.contact__box p {
+.contact__box p, .contact__head p {
   font-size: 18px;
   font-weight: 500;
   color: #fff;
 }
-.contact__box .adress {
+.contact__box .adress, .contact__head .adress {
   width: 300px;
 }
 .contact__local {
@@ -454,4 +481,193 @@ footer .row .footer__left {
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+}
+footer .row .footer__left a {
+  color: #fff;
+}
+
+@media (max-width: 1500px) {
+  header {
+    background-size: cover;
+    height: 100%;
+  }
+  header .header__right ul {
+    display: none;
+  }
+  header .header__right .nav__bar {
+    display: block;
+  }
+  header .hero {
+    padding: 3rem 0;
+  }
+  .about__img {
+    flex: 0.5;
+    width: 100px;
+  }
+  .testimonials__cards_card {
+    width: 350px;
+  }
+  .driveing__left {
+    flex: 0.3;
+  }
+  .driveing__right {
+    flex: 0.8;
+  }
+  .driveing__right img {
+    width: 100%;
+    height: 450px;
+  }
+}
+@media (max-width: 1160px) {
+  .about__content p {
+    width: 400px;
+    font-size: 16px;
+  }
+  .testimonials__cards_card {
+    width: 300px;
+  }
+  .partners__barnds img {
+    width: 120px;
+  }
+}
+@media (max-width: 1060px) {
+  header {
+    background-size: cover;
+    height: 100%;
+  }
+  header .header__local {
+    display: none;
+  }
+  header .header__phone {
+    display: none;
+  }
+  header .hero {
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 850px) {
+  header {
+    background-size: contain;
+    height: auto;
+  }
+  .about__top {
+    flex-direction: column;
+  }
+  .about__bottom {
+    flex-direction: column;
+  }
+  .about__content {
+    width: 100%;
+    padding: 50px 40px;
+  }
+  .about__content p {
+    width: 100%;
+  }
+  .about__img {
+    width: 100%;
+    display: none;
+  }
+  .about__img.respons__1, .about__img.respons__2 {
+    width: 100%;
+    display: block;
+  }
+  .mission a,
+  .mission p {
+    width: 336px;
+    font-size: 15px;
+  }
+  .mission h2 {
+    font-size: 20px;
+  }
+  .contact__boxes {
+    flex-direction: column;
+    align-items: start;
+  }
+  footer .row {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    height: 100%;
+  }
+  header .hero__top h1 {
+    font-size: 24px;
+  }
+  header .hero__top p {
+    width: 300px;
+    font-size: 15px;
+  }
+  .testimonials__cards {
+    justify-content: center;
+  }
+  .testimonials__cards__card {
+    width: 340px;
+  }
+  .testimonials__cards__card p {
+    font-size: 15px;
+  }
+  .testimonials__cards__card img {
+    width: 100%;
+  }
+  .driveing .row {
+    flex-direction: column;
+  }
+  .driveing__left {
+    width: 100%;
+    padding: 4rem;
+  }
+}
+@media (max-width: 560px) {
+  header .header__right {
+    gap: 15px;
+  }
+  header .header__btn {
+    display: none;
+  }
+  header .hero {
+    padding-top: 10rem;
+  }
+  header .hero__top p {
+    width: 100%;
+    font-size: 15px;
+  }
+  header .hero__btns {
+    flex-direction: column;
+    width: 100%;
+  }
+  header .hero__btns button {
+    width: 90%;
+  }
+  header .hero__bottom_boxes {
+    flex-direction: column;
+    align-items: start;
+  }
+  header .hero__bottom img {
+    width: 100%;
+  }
+  .partners__barnds {
+    flex-direction: column;
+  }
+  .partners__barnds img {
+    width: 100%;
+  }
+  .mission {
+    background-image: url("../images/Rectangle124.png");
+  }
+  .chooses .row {
+    justify-content: start;
+  }
+  .chooses .row .chooses_boxes {
+    flex-direction: column;
+    align-items: start;
+  }
+  .contact .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */

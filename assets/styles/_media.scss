@@ -1,0 +1,251 @@
+@media (max-width: 1500px) {
+  header {
+    background-size: cover;
+    height: 100%;
+    .header {
+      &__right {
+        ul {
+          display: none;
+        }
+        .nav__bar {
+          display: block;
+        }
+      }
+    }
+    .hero {
+      padding: 3rem 0;
+    }
+  }
+  .about {
+    &__img {
+      flex: 0.5;
+      width: 100px;
+      //   width: 100%;
+    }
+  }
+
+  .testimonials {
+    &__cards {
+      &_card {
+        width: 350px;
+      }
+    }
+  }
+  .driveing {
+    &__left {
+      flex: 0.3;
+    }
+    &__right {
+      flex: 0.8;
+      img {
+        width: 100%;
+        height: 450px;
+      }
+    }
+  }
+}
+@media (max-width: 1160px) {
+  .about {
+    &__content {
+      //   padding: 0 30px;
+      p {
+        width: 400px;
+        font-size: 16px;
+      }
+    }
+  }
+  .testimonials {
+    &__cards {
+      &_card {
+        width: 300px;
+      }
+    }
+  }
+  .partners {
+    &__barnds {
+      img {
+        width: 120px;
+      }
+    }
+  }
+}
+@media (max-width: 1060px) {
+  header {
+    background-size: cover;
+    height: 100%;
+    .header {
+      &__local {
+        display: none;
+      }
+      &__phone {
+        display: none;
+      }
+    }
+    .hero {
+      padding: 3rem 0;
+    }
+  }
+}
+@media (max-width: 850px) {
+  header {
+    background-size: contain;
+    height: auto;
+  }
+  .about {
+    &__top {
+      // display: flex;
+      flex-direction: column;
+    }
+    &__bottom {
+      // display: flex;
+      flex-direction: column;
+    }
+    &__content {
+      width: 100%;
+      padding: 50px 40px;
+      p {
+        width: 100%;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      display: none;
+    }
+    &__img.respons__1,
+    &__img.respons__2 {
+      width: 100%;
+      display: block;
+    }
+  }
+  .mission {
+    a,
+    p {
+      width: 336px;
+      font-size: 15px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+  .contact {
+    &__boxes {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+  footer {
+    .row {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: start;
+    }
+  }
+}
+@media (max-width: 700px) {
+  header {
+    height: 100%;
+
+    .hero {
+      &__top {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          width: 300px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .testimonials {
+    &__cards {
+      justify-content: center;
+      &__card {
+        width: 340px;
+        p {
+          font-size: 15px;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .driveing {
+    .row {
+      flex-direction: column;
+    }
+    &__left {
+      width: 100%;
+      padding: 4rem;
+    }
+  }
+}
+@media (max-width: 560px) {
+  header {
+    .header {
+      &__right {
+        gap: 15px;
+      }
+      &__btn {
+        display: none;
+      }
+    }
+
+    .hero {
+      padding-top: 10rem;
+
+      &__top {
+        p {
+          width: 100%;
+          font-size: 15px;
+        }
+      }
+
+      &__btns {
+        flex-direction: column;
+        width: 100%;
+        button {
+          width: 90%;
+        }
+      }
+      &__bottom {
+        &_boxes {
+          flex-direction: column;
+          align-items: start;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .partners {
+    &__barnds {
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .mission {
+    background-image: url("../images/Rectangle124.png");
+  }
+  .chooses {
+    .row {
+      justify-content: start;
+      .chooses_boxes {
+        flex-direction: column;
+        align-items: start;
+      }
+    }
+  }
+
+  .contact {
+    .row {
+      @include dFlex(space-between, start);
+      flex-direction: column;
+    }
+  }
+}

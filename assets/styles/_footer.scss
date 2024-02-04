@@ -6,6 +6,9 @@ footer {
     .footer__left {
       @include dFlex;
       gap: 30px;
+      a {
+        color: #fff;
+      }
     }
   }
 }
